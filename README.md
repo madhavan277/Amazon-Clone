@@ -10,9 +10,6 @@ Throughout the development process, I faced various challenges and obstacles. By
 
 Rather than building a simple landing page, I chose to replicate the Amazon homepage to better understand the complexities behind a large-scale e-commerce platform. This project allowed me to dive deep into UI/UX design, responsive layouts, and interactive features, providing practical experience in building user-centric web applications.
 
-**Acknowledgements:**
-
-I am deeply thankful to Shraddha Khapra for her invaluable guidance and support throughout this project. Her expertise and dedication were crucial in helping me navigate through the learning curve.Additionally, I appreciate Apna College for offering a comprehensive and well-structured curriculum that empowered me with the skills to build projects like this one.
 
 **Conclusion:**
 
