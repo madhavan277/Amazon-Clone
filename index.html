@@ -1,83 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon Clone</title>
-    <link rel="stylesheet" href="amazon.css">
-    <link href="https://fonts.googleapis.com/css2?family=Amazon+Ember&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amazon Clone</title>
+  <link rel="stylesheet" href="amazon.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amazon+Ember&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="container">
+      <a href="#" class="logo" aria-label="Amazon Home">
+        <img src="amazon_logo.png" alt="Amazon Logo" />
+      </a>
 
-    <!-- Header -->
-    <header class="navbar">
-        <div class="logo">
-            <img src="amazon_logo.png" alt="Amazon Logo">
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search Amazon">
-            <button>🔍</button>
-        </div>
-        <div class="nav-links">
-            <span>Hello, Sign In</span>
-            <span>Returns & Orders</span>
-            <span>Cart 🛒</span>
-        </div>
-    </header>
+      <form class="search-bar" role="search" aria-label="Search Amazon">
+        <input
+          type="search"
+          placeholder="Search Amazon"
+          aria-label="Search Amazon"
+          required
+        />
+        <button type="submit" aria-label="Search">
+          🔍
+        </button>
+      </form>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <img src="hero_image.jpg" alt="Hero Banner">
-    </section>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#" class="nav-item">Hello, Sign In</a>
+        <a href="#" class="nav-item">Returns & Orders</a>
+        <a href="#" class="nav-item cart">Cart 🛒</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Product Grid -->
-    <section class="products">
-        <div class="box">
-            <h2>Clothing</h2>
-            <img src="box1_image.jpg" alt="">
-            <p>See more</p>
-        </div>
-        <div class="box">
-            <h2>Health & Personal Care</h2>
-            <img src="box2_image.jpg" alt="">
-            <p>Shop now</p>
-        </div>
-        <div class="box">
-            <h2>Home Appliances</h2>
-            <img src="box3_image.jpg" alt="">
-            <p>See more</p>
-        </div>
-        <div class="box">
-            <h2>Mobiles & Accessories</h2>
-            <img src="box4_image.jpg" alt="">
-            <p>See more</p>
-        </div>
-        <div class="box">
-            <h2>Beauty Picks</h2>
-            <img src="box5_image.jpg" alt="">
-            <p>See more</p>
-        </div>
-        <div class="box">
-            <h2>Pet Supplies</h2>
-            <img src="box6_image.jpg" alt="">
-            <p>See more</p>
-        </div>
-        <div class="box">
-            <h2>New Arrivals</h2>
-            <img src="box7_image.jpg" alt="">
-            <p>See more</p>
-        </div>
-        <div class="box">
-            <h2>Fashion Deals</h2>
-            <img src="box8_image.jpg" alt="">
-            <p>See more</p>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="hero_image.jpg" alt="Hero Banner showing deals" />
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>© 2025 Amazon Clone by Madhavan. All rights reserved.</p>
-    </footer>
+  <!-- Products Grid -->
+  <main class="products container">
+    <article class="product-box">
+      <h2>Clothing</h2>
+      <img src="box1_image.jpg" alt="Clothing category" />
+      <p><a href="#">See more</a></p>
+    </article>
+    <article class="product-box">
+      <h2>Health & Personal Care</h2>
+      <img src="box2_image.jpg" alt="Health & Personal Care category" />
+      <p><a href="#">Shop now</a></p>
+    </article>
+    <article class="product-box">
+      <h2>Home Appliances</h2>
+      <img src="box3_image.jpg" alt="Home Appliances category" />
+      <p><a href="#">See more</a></p>
+    </article>
+    <article class="product-box">
+      <h2>Mobiles & Accessories</h2>
+      <img src="box4_image.jpg" alt="Mobiles & Accessories category" />
+      <p><a href="#">See more</a></p>
+    </article>
+    <article class="product-box">
+      <h2>Beauty Picks</h2>
+      <img src="box5_image.jpg" alt="Beauty Picks category" />
+      <p><a href="#">See more</a></p>
+    </article>
+    <article class="product-box">
+      <h2>Pet Supplies</h2>
+      <img src="box6_image.jpg" alt="Pet Supplies category" />
+      <p><a href="#">See more</a></p>
+    </article>
+    <article class="product-box">
+      <h2>New Arrivals</h2>
+      <img src="box7_image.jpg" alt="New Arrivals category" />
+      <p><a href="#">See more</a></p>
+    </article>
+    <article class="product-box">
+      <h2>Fashion Deals</h2>
+      <img src="box8_image.jpg" alt="Fashion Deals category" />
+      <p><a href="#">See more</a></p>
+    </article>
+  </main>
 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Amazon Clone by Madhavan. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
