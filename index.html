@@ -2,96 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amazon Clone</title>
-  <link rel="stylesheet" href="amazon.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Amazon+Ember&display=swap"
-    rel="stylesheet"
-  />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header -->
   <header class="navbar">
-    <div class="container">
-      <a href="#" class="logo" aria-label="Amazon Home">
-        <img src="amazon_logo.png" alt="Amazon Logo" />
-      </a>
-
-      <form class="search-bar" role="search" aria-label="Search Amazon">
-        <input
-          type="search"
-          placeholder="Search Amazon"
-          aria-label="Search Amazon"
-          required
-        />
-        <button type="submit" aria-label="Search">
-          🔍
-        </button>
-      </form>
-
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#" class="nav-item">Hello, Sign In</a>
-        <a href="#" class="nav-item">Returns & Orders</a>
-        <a href="#" class="nav-item cart">Cart 🛒</a>
-      </nav>
+    <div class="logo">amazon</div>
+    <input type="text" class="search-bar" placeholder="Search Amazon" />
+    <button class="search-btn">🔍</button>
+    <div class="nav-links">
+      <a href="#">Hello, Sign In</a>
+      <a href="#">Returns & Orders</a>
+      <a href="#">Cart 🛒</a>
     </div>
   </header>
+  <main class="main-content">
+    <section class="banner">
+      <img src="banner.jpg" alt="Promo" />
+    </section>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <img src="hero_image.jpg" alt="Hero Banner showing deals" />
-  </section>
-
-  <!-- Products Grid -->
-  <main class="products container">
-    <article class="product-box">
-      <h2>Clothing</h2>
-      <img src="box1_image.jpg" alt="Clothing category" />
-      <p><a href="#">See more</a></p>
-    </article>
-    <article class="product-box">
-      <h2>Health & Personal Care</h2>
-      <img src="box2_image.jpg" alt="Health & Personal Care category" />
-      <p><a href="#">Shop now</a></p>
-    </article>
-    <article class="product-box">
-      <h2>Home Appliances</h2>
-      <img src="box3_image.jpg" alt="Home Appliances category" />
-      <p><a href="#">See more</a></p>
-    </article>
-    <article class="product-box">
-      <h2>Mobiles & Accessories</h2>
-      <img src="box4_image.jpg" alt="Mobiles & Accessories category" />
-      <p><a href="#">See more</a></p>
-    </article>
-    <article class="product-box">
-      <h2>Beauty Picks</h2>
-      <img src="box5_image.jpg" alt="Beauty Picks category" />
-      <p><a href="#">See more</a></p>
-    </article>
-    <article class="product-box">
-      <h2>Pet Supplies</h2>
-      <img src="box6_image.jpg" alt="Pet Supplies category" />
-      <p><a href="#">See more</a></p>
-    </article>
-    <article class="product-box">
-      <h2>New Arrivals</h2>
-      <img src="box7_image.jpg" alt="New Arrivals category" />
-      <p><a href="#">See more</a></p>
-    </article>
-    <article class="product-box">
-      <h2>Fashion Deals</h2>
-      <img src="box8_image.jpg" alt="Fashion Deals category" />
-      <p><a href="#">See more</a></p>
-    </article>
+    <section class="categories">
+      <div class="category-card">
+        <h3>Clothing</h3>
+        <img src="https://via.placeholder.com/150" alt="Clothing" />
+      </div>
+      <div class="category-card">
+        <h3>Health & Personal Care</h3>
+        <img src="https://via.placeholder.com/150" alt="Health" />
+      </div>
+      <div class="category-card">
+        <h3>Home Appliances</h3>
+        <img src="https://via.placeholder.com/150" alt="Home" />
+      </div>
+      <div class="category-card">
+        <h3>Mobiles & Accessories</h3>
+        <img src="https://via.placeholder.com/150" alt="Mobiles" />
+      </div>
+      <div class="category-card">
+        <h3>Beauty Picks</h3>
+        <img src="https://via.placeholder.com/150" alt="Beauty" />
+      </div>
+    </section>
   </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2025 Amazon Clone by Madhavan. All rights reserved.</p>
-    </div>
-  </footer>
 </body>
 </html>
