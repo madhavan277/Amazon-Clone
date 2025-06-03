@@ -1,83 +1,134 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon Clone</title>
-    <link rel="stylesheet" href="amazon.css">
-    <link href="https://fonts.googleapis.com/css2?family=Amazon+Ember&display=swap" rel="stylesheet">
-</head>
-<body>
+/* Reset and base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Amazon Ember', Arial, sans-serif;
+  background-color: #fff;
+  color: #111;
+  overflow-x: hidden;
+}
 
-    <!-- Header -->
-    <header class="navbar">
-        <div class="logo">
-            <img src="amazon_logo.png" alt="Amazon Logo">
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search Amazon">
-            <button>🔍</button>
-        </div>
-        <div class="nav-links">
-            <span>Hello, Sign In</span>
-            <span>Returns & Orders</span>
-            <span>Cart 🛒</span>
-        </div>
-    </header>
+/* Navbar */
+.navbar {
+  background-color: #232f3e;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.navbar .logo img {
+  height: 40px;
+}
+.navbar .search-bar {
+  flex: 1 1 400px;
+  display: flex;
+}
+.navbar input[type="text"] {
+  flex-grow: 1;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 1rem;
+}
+.navbar button {
+  background-color: #febd69;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+.navbar .nav-links {
+  display: flex;
+  gap: 20px;
+  white-space: nowrap;
+}
+.navbar .nav-links span {
+  cursor: pointer;
+}
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <img src="hero_image.jpg" alt="Hero Banner">
-    </section>
+/* Hero banner */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-    <!-- Product Grid -->
-    <section class="products">
-        <div class="box">
-            <h2>Clothing</h2>
-            <img src="box1_image.jpg" alt="">
-            <p>See more</p>
-        </div>
-        <div class="box">
-            <h2>Health & Personal Care</h2>
-            <img src="box2_image.jpg" alt="">
-            <p>Shop now</p>
-        </div>
-        <div class="box">
-            <h2>Home Appliances</h2>
-            <img src="box3_image.jpg" alt="">
-            <p>See more</p>
-        </div>
-        <div class="box">
-            <h2>Mobiles & Accessories</h2>
-            <img src="box4_image.jpg" alt="">
-            <p>See more</p>
-        </div>
-        <div class="box">
-            <h2>Beauty Picks</h2>
-            <img src="box5_image.jpg" alt="">
-            <p>See more</p>
-        </div>
-        <div class="box">
-            <h2>Pet Supplies</h2>
-            <img src="box6_image.jpg" alt="">
-            <p>See more</p>
-        </div>
-        <div class="box">
-            <h2>New Arrivals</h2>
-            <img src="box7_image.jpg" alt="">
-            <p>See more</p>
-        </div>
-        <div class="box">
-            <h2>Fashion Deals</h2>
-            <img src="box8_image.jpg" alt="">
-            <p>See more</p>
-        </div>
-    </section>
+/* Product grid */
+.products {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.box {
+  flex: 1 1 220px;
+  max-width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+.box:hover {
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+}
+.box img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+.box h2 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #007185;
+}
+.box p {
+  font-size: 0.9rem;
+  color: #565959;
+  cursor: pointer;
+  text-decoration: underline;
+}
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>© 2025 Amazon Clone by Madhavan. All rights reserved.</p>
-    </footer>
+/* Footer */
+.footer {
+  background-color: #232f3e;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
 
-</body>
-</html>
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar .search-bar {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .navbar .nav-links {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 400px) {
+  .box {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
